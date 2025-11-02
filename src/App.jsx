@@ -48,7 +48,7 @@ function App() {
 
       <hr />
 
-      <div className="tools mt-20">
+      <div className="tools mt-20 mb-20">
         <h1 className="text-4xl/snug font-bold mb-4">Tools yang dipakai</h1>
         <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50">Berikut ini beberapa tools yang biasa saya gunakan untuk membuat sebuah Website</p>
         <div className="tools-box mt-14 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
