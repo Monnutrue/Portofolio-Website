@@ -15,7 +15,7 @@ const Navbar = () => {
             setActive(true);
 
             timeoutId.current = setTimeout(() => {
-                if (window.scrollY > 150 || window.scrollY < 150) {
+                if (window.scrollY > 150 || window.screenY < 150) {
                     setActive(false);
                 }
             }, inactivityTime);
