@@ -1,15 +1,24 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 const Navbar = () => {
     const [active, setActive] = useState(false);
 
+    const timeoutId = useRef(null);
+    const inactivityTime = 2000;
+
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 150) {
-                setActive(true);
-            } else {
-                setActive(false);
+            if(timeoutId.current) {
+                clearTimeout(timeoutId.current);
             }
+
+            setActive(true);
+
+            timeoutId.current = setTimeout(() => {
+                if (window.scrollY > 150 || window.scrollY < 150) {
+                    setActive(false);
+                }
+            }, inactivityTime);
         }
 
         window.addEventListener("scroll", handleScroll);
