@@ -2,11 +2,23 @@ const Footer = () => {
   return (
     <div className="footer mt-10">
         <div className="xl:w-1/1 lg:w-3/4 w-full pt-10 pb-10 md:ps-0 ps-10 mx-auto bg-zinc-800 rounded-t-3xl grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1">
-            <div className="md:ps-20 xl:ps-40 ps-0">
-              <h4 className="md:text-4xl text-[15pt] font-bold">Contact</h4>
+            <div className="md:ps-20 xl:ps-40 ps-0 mb-5">
+              <h4 className="md:text-4xl text-[15pt] font-bold md:text-left text-center sm:pe-0 pe-10">Contact Me</h4>
+              <ul className="sm:pt-3 sm:mx-6 sm:me-0 me-10 pt-1 sm:grid sm:grid-cols-1 flex items-center justify-center sm:gap-0 gap-12">
+                <li className="mb-1">
+                  <a href="" className="flex items-center sm:gap-2" >
+                    <i className="ri-mail-fill ri-2x"></i>
+                    <p className="sm:flex hidden">dafaalfarizi1411@gmail.com</p></a>
+                </li>
+                <li className="mb-1">
+                  <a href="" className="flex items-center sm:gap-2" >
+                    <i class="ri-whatsapp-fill ri-2x"></i>
+                    <p className="sm:flex hidden">+628985593162</p></a>
+                </li>
+              </ul>
             </div>
             <div className="md:ps-10">
-              <h4 className="md:text-4xl text-[15pt] font-bold">Social Media</h4>
+              <h4 className="md:text-4xl text-[15pt] font-bold md:text-left text-center sm:pe-0 pe-10">Social Media</h4>
               <ul className="sm:pt-3 sm:mx-6 sm:me-0 me-10 pt-1 sm:grid sm:grid-cols-1 flex items-center justify-between">
                 <li className="mb-1">
                   <a href="" className="flex items-center sm:gap-2" >

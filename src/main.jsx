@@ -8,7 +8,7 @@ import Footer from './components/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='container mx-auto px-10'>
+    <div className='container mx-auto px-5 sm:px-10'>
       <Navbar />
       <App />
       <Footer />

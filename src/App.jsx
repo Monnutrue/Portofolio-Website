@@ -1,16 +1,16 @@
 import { listTools } from "./data"
 
+
 function App() {
   return (
     <>
-      <div className="hero grid grid-cols-1 items-center xl:gap-0 gap-6 pt-10 md:grid-cols-2 mb-20">
+      <div className="hero grid grid-cols-1 items-center xl:gap-0 gap-6 pt-10 md:grid-cols-2 mb-10">
         <div>
-          <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
-            <img src=".././assets/tsumugi-wenders.png" alt="Hero Image" className="w-10 rounded-md"/>
-            <p className="text-justify">"Tsumugi is my wife"</p>
-          </div>
           <h1 className="text-5xl/tight font-bold mb-6">Hi, my name is Muhammad Dafa Alfarizi</h1>
-          <p className="text-base/loose mb-6 opacity-50">Saya adalah seorang junior web developer, saat ini saya sedang berkuliah di Politeknik Negeri Sriwijaya dan mengambil jurusan Teknik Komputer. Saya mempunyai ketertarikan dalam bidang Programming dan Networking, terutama pada pembuatan sebuah Website dan Jaringan Lokal.</p>
+          <div className="flex items-start gap-5 mb-10 bg-zinc-800 p-4 rounded-2xl">
+            <img src=".././assets/tsumugi-wenders.png" alt="Hero Image" className="w-10 rounded-md pt-1"/>
+            <p className="text-base/loose opacity-50">"Tsumugi Wenders adalah sosok yang memancarkan kehangatan dan ketulusan dalam setiap senyumnya. Sifatnya yang polos dan penuh rasa ingin tahu membuatnya tampak seperti sinar matahari di tengah musim panas — sederhana, jujur, namun mampu menyentuh hati siapa pun yang mengenalnya. Ia memiliki cara berbicara yang lembut dan tatapan yang selalu membawa ketenangan, seolah dunia menjadi sedikit lebih damai saat bersamanya. Meski terlihat rapuh, Tsumugi menyimpan kekuatan hati yang besar; ia mampu memahami perasaan orang lain dengan empati yang tulus dan tidak berpura-pura. Kecantikannya bukan hanya dari penampilan luar, tetapi juga dari ketulusan jiwanya yang membuatnya begitu menawan dan sulit dilupakan."</p>
+          </div>
           <div className="flex items-center gap-4">
             <a href="#" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600">
               Download CV 
@@ -35,11 +35,11 @@ function App() {
           </p>
           <div className="flex items-center justify-around md:text-left text-center">
             <div>
-              <h1  className="md:text-4xl text-2xl mb-1">45 <span className="text-violet-500">+</span></h1>
+              <h1  className="md:text-4xl text-2xl mb-1">5 <span className="text-violet-500">+</span></h1>
               <p>Projek Selesai</p>
             </div>
             <div>
-              <h1  className="md:text-4xl text-2xl mb-1">4 <span className="text-violet-500">+</span></h1>
+              <h1  className="md:text-4xl text-2xl mb-1">1 <span className="text-violet-500">+</span></h1>
               <p>Tahun Pengalaman</p>
             </div>
           </div>
@@ -63,6 +63,8 @@ function App() {
           ))}
         </div>
       </div>
+
+      <hr />
     </>
   )
 }

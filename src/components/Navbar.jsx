@@ -4,7 +4,7 @@ const Navbar = () => {
     const [active, setActive] = useState(false);
 
     const timeoutId = useRef(null);
-    const inactivityTime = 2000;
+    const inactivityTime = 1000;
 
     useEffect(() => {
         const handleScroll = () => {
